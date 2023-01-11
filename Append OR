@@ -1,0 +1,24 @@
+int main() {
+int t;
+cin>>t;
+while(t--){
+int n,y;
+cin>>n>>y;
+vector<int> v(n);
+int s = 0;
+for(int i=0;i<n;i++){
+    cin>>v[i];
+    s=s|v[i];
+       }
+int ans = -1;
+    for(int i=0;i<=max(s,y);i++){
+        if((s|i)==y){
+        ans = i;
+        break;
+           }
+       }
+cout<<ans<<endl;
+}
+
+	return 0;
+}
