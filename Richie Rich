@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    a,b,x=map(int,input().split())
+    y=b-a
+    if y%x==0:
+        print(y//x)
+    else:
+        print(y//x +1)
+        
