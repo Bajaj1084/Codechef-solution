@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    w1,w2,x1,x2,m=map(int,input().split())
+    maxi=w1+max(x1,x2)*m
+    mini=w1+min(x1,x2)*m
+    if mini<=w2<=maxi:
+        print(1)
+    else:
+        print(0)
